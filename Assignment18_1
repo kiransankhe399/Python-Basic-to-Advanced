@@ -1,0 +1,27 @@
+#Input list = output addition of list
+
+def Summation(Data):
+    Sum = 0
+
+    for no in Data:
+        Sum = Sum + no
+
+    return Sum
+
+
+def main():
+    List = []
+
+    N = int(input("Enter number of elements: "))
+
+    for i in range(N):
+        no = int(input("Enter number: "))
+        List.append(no)
+
+    Ret = Summation(List)
+
+    print("Addition is:", Ret)
+
+
+if __name__ == "__main__":
+    main()
