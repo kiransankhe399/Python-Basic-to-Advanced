@@ -1,21 +1,12 @@
 #Calculate Count Odd number in list using pool map()
 import multiprocessing
 import os
+import time
+import math
 
-def CountOdd(IList):
-    Count = 0
-    Sum = 0
+def Multiple(No):
+    return math.factorial(No)
 
-    for i in range(1, IList + 1):
-        for j in range(1,i+1):
-          if i%2 != 0:
-            Sum = True
-            break
-
-        if Sum:
-            Count += 1
-
-    return Count
 
 def main():
     IList = []
