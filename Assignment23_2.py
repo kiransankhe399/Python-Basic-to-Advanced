@@ -3,12 +3,8 @@ import multiprocessing
 import os
 
 def SumOdd(Num):
-    Sum = 0
-    for i in range(1, Num + 1):
-        for j in range(1,i+1):
-          if i%2 != 0:
-            Sum = Sum + i 
-    return Sum
+    k = (Num + 1) // 2  
+    return k * k
 
 def main():
     IList = []
@@ -25,7 +21,7 @@ def main():
 
     print("List of input is :", IList)
     print("PID is :", os.getpid())
-    print("Factorial is :", Res)
+    print("OddCount is :", Res)
 
 
 
