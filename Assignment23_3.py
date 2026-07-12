@@ -3,19 +3,7 @@ import multiprocessing
 import os
 
 def CountEven(IList):
-    Count = 0
-    Sum = 0
-
-    for i in range(1, IList + 1):
-        for j in range(1,i+1):
-          if i%2 == 0:
-            Sum = True
-            break
-
-        if Sum:
-            Count += 1
-
-    return Count
+    return (IList + 1) // 2
 
 def main():
     IList = []
@@ -32,7 +20,7 @@ def main():
 
     print("List of input is :", IList)
     print("PID is :", os.getpid())
-    print("Factorial is :", Res)
+    print("CountEven is :", Res)
 
 
 if __name__ == "__main__":
